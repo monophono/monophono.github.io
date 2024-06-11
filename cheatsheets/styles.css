@@ -1,0 +1,92 @@
+* {
+    background-color: #222;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: monospace;
+    cursor: text;
+}
+
+body {   
+    display: grid;
+    place-items: center;
+    margin: 0;
+}
+
+#header {
+   font-size: 50px;
+   padding: 5px;
+   text-align: center;
+}
+
+h2 {
+    font-size: 35px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 25px;
+    padding-top: 15px;
+}
+
+h4 {
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+p {
+    color: silver;
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+table.right th, table.right td  {
+    min-width: 170px;
+    text-align: left;
+}
+
+table.right th {
+    font-weight: bold;
+    font-size: larger;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 5px;
+}
+
+.cheats {
+    margin-bottom: 100px;
+}
+
+.sheets {
+    border-color: #555;
+    border-style: dotted;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+}
+
+.code {
+    white-space: pre;
+}
+
+footer {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    color: #222;
+    background-color: silver;
+    font-weight: bold;
+}
