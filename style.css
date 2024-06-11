@@ -1,0 +1,33 @@
+* {
+    background-color: #222;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 909;
+}
+
+h1 {
+    font-size: 82px;
+    background-color: gray;
+    background-image: url();
+    color: black;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 606px;
+    height: 82px;
+}
+
+h2 {
+
+    font-size: 42px;
+    color: black;
+    background-color: transparent;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-321px, -45px);
+    width: 350px;
+    height: 42px;
+}
