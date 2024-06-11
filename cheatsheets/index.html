@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'>
+    <title>MONO/PHONO Cheat Sheet</title>
+    <link href='styles.css' rel='stylesheet'>
+    <link rel='icon' href='favicon.ico' type='image/x-icon'>
+    <meta name='description' content='Cheat Sheets'>
+    <meta name='keywords' content='MONO/PHONO, Cheat Sheets'>
+    <meta name='author' content='MONO/PHONO'>
+  </head>
+  <body>
+
+  
+    <header>
+      <div class='header'>
+        <h1 id='header'>MONO/PHONO Cheat Sheets</h1>
+      </div>
+    </header>
+
+    <main>
+      <div class='main'>
+        <h2 id='html-head'>HTML Base Structure</h2>
+        <div class='cheats'>
+          <div class='sheets'>
+            <h3>HTML (SEMANTIC MARKUP)</h3>
+            <p class='code'>
+&lt;html lang='en'&gt;
+  &lt;head&gt;
+    &lt;meta charset='UTF-8'&gt;
+    &lt;title&gt;Cheat Sheet&lt;/title&gt;
+    &lt;link href='styles.css' rel='stylesheet'&gt;
+    &lt;link rel='icon' href='favicon.ico' type='image/x-icon'&gt;
+    &lt;meta name='description' content='Cheat Sheets'&gt;
+    &lt;meta name='keywords' content='Cheat Sheets'&gt;
+    &lt;meta name='author' content='Cheat Sheets'&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+
+    &lt;header&gt;
+      &lt;div class='header'&gt;
+        &lt;h1 id='header'&gt;Header&lt;/h1&gt;
+        &lt;nav&gt;
+          "Primary and secondary menus but ever nest navs."
+        &lt;/nav&gt;
+      &lt;/div&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+      &lt;section class='main'&gt;
+        &lt;h2 id='mainheader'&gt;Main Header&lt;/h2&gt;
+        &lt;p&gt;
+            
+        &lt;/p&gt;
+      &lt;/section&gt;
+    &lt;/main&gt;
+            
+    &lt;footer&gt;
+      &lt;div class='footer'&gt;
+        &lt;h2 id='footheader'&gt;Foot Header&lt;/h2&gt;
+        &lt;p&gt;
+            
+        &lt;/p&gt;
+            
+      &lt;/div&gt;
+    &lt;/footer&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+            </p>
+          </div>
+        </div>
+
+        <h2 id='other-html-head'>Other HTML &lt;tags&gt;</h2>
+        <div class='cheats'>
+          <div class='sheets'>
+            <h3>TABLES</h3>
+            <table>
+              <caption>Table Caption</caption>
+              <colgroup>
+                <col>
+                <col span='2' class='doubble-left'>
+                <col span='2' class='doubble-right'>
+              </colgroup>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th colspan='2'>Doubble Header Left</th>
+                  <th colspan='2'>Doubble Header Right</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th rowspan='2'>First Two Rows</th>
+                  <td>Body 1</td>
+                  <td>Body 2</td>
+                  <td>Body 3</td>
+                  <td>Body 4</td>
+                </tr>
+                <tr>
+                  <td>Body 5</td>
+                  <td>Body 6</td>
+                  <td>Body 7</td>
+                  <td>Body 8</td>
+                </tr>
+                <tr>
+                  <th rowspan='2'>Second Two Rows</th>
+                  <td>Body 9</td>
+                  <td>Body 10</td>
+                  <td>Body 11</td>
+                  <td>Body 12</td>
+                </tr>
+                <tr>
+                  <td>Body 13</td>
+                  <td>Body 14</td>
+                  <td>Body 15</td>
+                  <td>Body 16</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th></th>
+                  <td>Footer 1</td>
+                  <td>Footer 2</td>
+                  <td>Footer 3</td>
+                  <td>Footer 4</td>
+                </tr>
+              </tfoot>
+            </table>
+            <h4>CODE</h4>
+            <p class='code'>
+&lt;table&gt;
+  &lt;caption&gt;Table Caption&lt;/caption&gt;
+  &lt;colgroup&gt;
+    &lt;col&gt;
+    &lt;col span='2' class='doubble-left'&gt;
+    &lt;col span='2' class='doubble-right'&gt;
+  &lt;/colgroup&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th colspan='2'&gt;Doubble Header Left&lt;/th&gt;
+      &lt;th colspan='2'&gt;Doubble Header Right&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th rowspan='2'&gt;First Two Rows&lt;/th&gt;
+      &lt;td&gt;Body 1&lt;/td&gt;
+      &lt;td&gt;Body 2&lt;/td&gt;
+      &lt;td&gt;Body 3&lt;/td&gt;
+      &lt;td&gt;Body 4&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Body 5&lt;/td&gt;
+      &lt;td&gt;Body 6&lt;/td&gt;
+      &lt;td&gt;Body 7&lt;/td&gt;
+      &lt;td&gt;Body 8&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th rowspan='2'&gt;Second Two Rows&lt;/th&gt;
+      &lt;td&gt;Body 9&lt;/td&gt;
+      &lt;td&gt;Body 10&lt;/td&gt;
+      &lt;td&gt;Body 11&lt;/td&gt;
+      &lt;td&gt;Body 12&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Body 13&lt;/td&gt;
+      &lt;td&gt;Body 14&lt;/td&gt;
+      &lt;td&gt;Body 15&lt;/td&gt;
+      &lt;td&gt;Body 16&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;td&gt;Footer 1&lt;/td&gt;
+      &lt;td&gt;Footer 2&lt;/td&gt;
+      &lt;td&gt;Footer 3&lt;/td&gt;
+      &lt;td&gt;Footer 4&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;
+            </p>
+          </div>
+          <div class='sheets'>
+            <h3>FORMS</h3>
+            <form>
+              <fieldset>
+                <legend>Describes fieldset</legend>
+                <p>
+                  <input type='radio' name='vertical' id='option1' value='top'><label for='option1'>Top</label>
+                </p>
+                <p>
+                  <input type='radio' name='vertical' id='option2' value='bottom'><label for='option2'>Bottom</label>
+                </p>
+                <p>
+                  <label for='horizontal'>Horizontal:</label>
+                  <select id='horizontal' name='horizontal'>
+                    <option value='left'>Left</option>
+                    <option value='middle'>Middle</option>
+                    <option value='right'>Right</option>
+                  </select>
+                </p>
+              </fieldset>
+            </form>
+            <h4>CODE</h4>
+            <p class='code'>
+&lt;form&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Describes fieldset&lt;/legend&gt;
+    &lt;p&gt;
+      &lt;input type='radio' name='vertical' id='option1' value='top'&gt;&lt;label for='option1'&gt;Top&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      &lt;input type='radio' name='vertical' id='option2' value='bottom'&gt;&lt;label for='option2'&gt;Bottom&lt;/label&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      &lt;label for='horizontal'&gt;Horizontal:&lt;/label&gt;
+      &lt;select id='horizontal' name='horizontal'&gt;
+        &lt;option value='left'&gt;Left&lt;/option&gt;
+        &lt;option value='middle'&gt;Middle&lt;/option&gt;
+        &lt;option value='right'&gt;Right&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/p&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;
+            </p>
+          </div>
+        </div>
+
+        <h2 id='css-head'>CSS selectors and specificity</h2>
+        <div class='cheats'>
+          <div class='sheets'>
+            <h3>Selectors</h3>
+            <table class="right">
+              <tr>
+                  <th>Selector</th>
+                  <th>Description</th>
+                  <th>Specificity</th>
+              </tr>
+              <tr>
+                  <td>*</td>
+                  <td>Universal selector - Selects all elements</td>
+                  <td>0, 0, 0, 0</td>
+              </tr>
+              <tr>
+                  <td>element</td>
+                  <td>Type selector - Selects all elements of a given type</td>
+                  <td>0, 0, 0, 1</td>
+              </tr>
+              <tr>
+                  <td>.class</td>
+                  <td>Class selector - Selects all elements with a given class</td>
+                  <td>0, 0, 1, 0</td>
+              </tr>
+              <tr>
+                  <td>#id</td>
+                  <td>ID selector - Selects the element with a given ID</td>
+                  <td>0, 1, 0, 0</td>
+              </tr>
+              <tr>
+                  <td>element.class</td>
+                  <td>Combines type and class selectors - Selects elements of a given type and class</td>
+                  <td>0, 0, 1, 1</td>
+              </tr>
+              <tr>
+                  <td>element, element</td>
+                  <td>Group selector - Selects all elements of the specified types</td>
+                  <td>0, 0, 0, 1 (for each type)</td>
+              </tr>
+              <tr>
+                  <td>element element</td>
+                  <td>Descendant selector - Selects all elements that are descendants of a specified element</td>
+                  <td>0, 0, 0, 2 (for each level)</td>
+              </tr>
+              <tr>
+                  <td>element > element</td>
+                  <td>Child selector - Selects all elements that are direct children of a specified element</td>
+                  <td>0, 0, 0, 2</td>
+              </tr>
+              <tr>
+                  <td>element + element</td>
+                  <td>Adjacent sibling selector - Selects the element that is immediately preceded by a specified element</td>
+                  <td>0, 0, 0, 2</td>
+              </tr>
+              <tr>
+                  <td>element ~ element</td>
+                  <td>General sibling selector - Selects all elements that are preceded by a specified element</td>
+                  <td>0, 0, 0, 2</td>
+              </tr>
+              <tr>
+                  <td>[attribute]</td>
+                  <td>Attribute selector - Selects all elements with a specified attribute</td>
+                  <td>0, 0, 1, 0</td>
+              </tr>
+              <tr>
+                  <td>[attribute=value]</td>
+                  <td>Attribute value selector - Selects all elements with a specified attribute value</td>
+                  <td>0, 0, 1, 0</td>
+              </tr>
+              <tr>
+                  <td>:pseudo-class</td>
+                  <td>Pseudo-class selector - Selects elements based on their state</td>
+                  <td>0, 0, 1, 0</td>
+              </tr>
+              <tr>
+                  <td>::pseudo-element</td>
+                  <td>Pseudo-element selector - Selects specified parts of an element</td>
+                  <td>0, 0, 1, 0</td>
+              </tr>
+            </table>
+            <h3>Specificity</h3>
+            <p style='margin-left: 20px;'>
+              Specificity in CSS is a measure of how specific a selector is. The more specific a selector is,<br>
+              the higher its priority when multiple selectors match the same element. Specificity is calculated<br>
+              based on a selector's components (inline styles, IDs, classes, attributes, and element names) and<br>
+              is represented as a comma-separated value (a, b, c, d):
+            </p>
+            <ul style='margin-left: 20px;'>
+              <li><strong>a:</strong> Number of inline styles (not common in stylesheets)</li>
+              <li><strong>b:</strong> Number of ID selectors</li>
+              <li><strong>c:</strong> Number of class selectors, attributes selectors, and pseudo-classes</li>
+              <li><strong>d:</strong> Number of type selectors (element names) and pseudo-elements</li>
+            </ul>
+            <p style='margin-left: 20px;'>
+              For example, the selector <code>body .intro p</code> has a specificity of (0, 0, 1, 2).
+            </p>
+          </div>
+        </div>
+            
+        <h2 id='common-css-head'>Common CSS properties</h2>
+        <div class='cheats'>
+          <div class='sheets'>
+            <h4>Text och Font Egenskaper</h4>
+            <table class='right'>
+                <tr>
+                    <th>Property</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>color</td>
+                    <td>Sets the color of the text</td>
+                </tr>
+                <tr>
+                    <td>font-family</td>
+                    <td>Specifies the font of the text</td>
+                </tr>
+                <tr>
+                    <td>font-size</td>
+                    <td>Sets the font size</td>
+                </tr>
+                <tr>
+                    <td>font-weight</td>
+                    <td>Specifies the weight (or boldness) of the font</td>
+                </tr>
+                <tr>
+                    <td>font-style</td>
+                    <td>Specifies the style of the font (e.g., normal, italic, oblique)</td>
+                </tr>
+                <tr>
+                    <td>text-align</td>
+                    <td>Aligns the text (e.g., left, right, center, justify)</td>
+                </tr>
+                <tr>
+                    <td>text-decoration</td>
+                    <td>Adds decoration to the text (e.g., underline, overline, line-through)</td>
+                </tr>
+                <tr>
+                    <td>text-transform</td>
+                    <td>Controls the capitalization of text (e.g., uppercase, lowercase, capitalize)</td>
+                </tr>
+                <tr>
+                    <td>letter-spacing</td>
+                    <td>Sets the spacing between characters</td>
+                </tr>
+                <tr>
+                    <td>line-height</td>
+                    <td>Sets the height between lines of text</td>
+                </tr>
+            </table>
+            
+            <h4>Box Model Properties</h4>
+            <table class='right'>
+                <tr>
+                    <th>Property</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>width</td>
+                    <td>Sets the width of an element</td>
+                </tr>
+                <tr>
+                    <td>height</td>
+                    <td>Sets the height of an element</td>
+                </tr>
+                <tr>
+                    <td>padding</td>
+                    <td>Sets the space between the content and the border of an element</td>
+                </tr>
+                <tr>
+                    <td>margin</td>
+                    <td>Sets the space outside the border of an element</td>
+                </tr>
+                <tr>
+                    <td>border</td>
+                    <td>Sets the border around an element (includes width, style, and color)</td>
+                </tr>
+            </table>
+            
+            <h4>Background Properties</h4>
+            <table class='right'>
+                <tr>
+                    <th>Property</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>background-color</td>
+                    <td>Sets the background color of an element</td>
+                </tr>
+                <tr>
+                    <td>background-image</td>
+                    <td>Sets an image as the background</td>
+                </tr>
+                <tr>
+                    <td>background-repeat</td>
+                    <td>Specifies whether the background image repeats (e.g., repeat, no-repeat, repeat-x, repeat-y)</td>
+                </tr>
+                <tr>
+                    <td>background-position</td>
+                    <td>Sets the starting position of the background image</td>
+                </tr>
+                <tr>
+                    <td>background-size</td>
+                    <td>Specifies the size of the background image (e.g., auto, cover, contain)</td>
+                </tr>
+            </table>
+            
+            <h4>Layout Properties</h4>
+            <table class='right'>
+                <tr>
+                    <th>Property</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>display</td>
+                    <td>Specifies the display behavior of an element (e.g., block, inline, flex, grid, none)</td>
+                </tr>
+                <tr>
+                    <td>position</td>
+                    <td>Specifies the type of positioning for an element (e.g., static, relative, absolute, fixed, sticky)</td>
+                </tr>
+                <tr>
+                    <td>top, right, bottom, left</td>
+                    <td>Specifies the offset from the respective side for positioned elements</td>
+                </tr>
+                <tr>
+                    <td>z-index</td>
+                    <td>Specifies the stack order of positioned elements</td>
+                </tr>
+                <tr>
+                    <td>overflow</td>
+                    <td>Specifies what happens if content overflows an element's box (e.g., visible, hidden, scroll, auto)</td>
+                </tr>
+            </table>
+            
+            <h4>Flexbox Properties</h4>
+            <table class='right'>
+                <tr>
+                    <th>Property</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>display</td>
+                    <td>Set to <code>flex</code> to create a flex container</td>
+                </tr>
+                <tr>
+                    <td>flex-direction</td>
+                    <td>Defines the direction of the flex items (e.g., row, row-reverse, column, column-reverse)</td>
+                </tr>
+                <tr>
+                    <td>justify-content</td>
+                    <td>Aligns flex items along the main axis (e.g., flex-start, flex-end, center, space-between, space-around)</td>
+                </tr>
+                <tr>
+                    <td>align-items</td>
+                    <td>Aligns flex items along the cross axis (e.g., flex-start, flex-end, center, baseline, stretch)</td>
+                </tr>
+                <tr>
+                    <td>flex-wrap</td>
+                    <td>Controls whether flex items wrap onto multiple lines (e.g., nowrap, wrap, wrap-reverse)</td>
+                </tr>
+            </table>
+            
+            <h4>Grid Properties</h4>
+            <table class='right'>
+                <tr>
+                    <th>Property</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>display</td>
+                    <td>Set to <code>grid</code> to create a grid container</td>
+                </tr>
+                <tr>
+                    <td>grid-template-columns</td>
+                    <td>Defines the columns of the grid</td>
+                </tr>
+                <tr>
+                    <td>grid-template-rows</td>
+                    <td>Defines the rows of the grid</td>
+                </tr>
+                <tr>
+                    <td>gap</td>
+                    <td>Specifies the gap between rows and columns (can also use <code>row-gap</code> and <code>column-gap</code>)</td>
+                </tr>
+            </table>
+            
+            <h4>Other Properties</h4>
+            <table class='right'>
+                <tr>
+                    <th>Property</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>opacity</td>
+                    <td>Sets the opacity level of an element</td>
+                </tr>
+                <tr>
+                    <td>cursor</td>
+                    <td>Specifies the type of cursor to be displayed (e.g., pointer, default, text, move)</td>
+                </tr>
+                <tr>
+                    <td>box-shadow</td>
+                    <td>Adds shadow effects around an element's frame</td>
+                </tr>
+                <tr>
+                    <td>transition</td>
+                    <td>Specifies the transition effect for changing properties</td>
+                </tr>
+                <tr>
+                    <td>transform</td>
+                    <td>Applies a 2D or 3D transformation to an element (e.g., rotate, scale, translate, skew)</td>
+                </tr>
+            </table>
+            
+            <h4>Pseudo-classes and Pseudo-elements</h4>
+            <table class='right'>
+                <tr>
+                    <th>Property</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>:hover</td>
+                    <td>Applies styles when the user hovers over an element</td>
+                </tr>
+                <tr>
+                    <td>:active</td>
+                    <td>Applies styles when an element is activated</td>
+                </tr>
+                <tr>
+                    <td>:focus</td>
+                    <td>Applies styles when an element has focus</td>
+                </tr>
+                <tr>
+                    <td>::before</td>
+                    <td>Inserts content before an element's content</td>
+                </tr>
+                <tr>
+                    <td>::after</td>
+                    <td>Inserts content after an element's content</td>
+                </tr>
+            </table>
+        
+            
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <a href='https://www.codecademy.com/article/glossary-html'>HTML Glossary</a>
+      <a href='https://www.codecademy.com/article/html5-features'>HTML5 Features</a>
+      <a href='https://www.codecademy.com/article/glossary-css'>CSS Glossary</a>
+      <a href='https://www.codecademy.com/article/css3-features'>CSS3 Features</a>
+      <a href='https://discuss.codecademy.com/t/build-your-own-cheatsheet-challenge-project-html-css/462393'>Codecademy Forums</a>
+      <a href='https://developer.mozilla.org/en-US/'>MDN Web Docs</a>
+      <a href='https://www.w3schools.com/'>W3Schools</a>
+    </footer>
+  </body>
+</html>
