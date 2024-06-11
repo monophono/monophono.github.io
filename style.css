@@ -31,3 +31,27 @@ h2 {
     width: 350px;
     height: 42px;
 }
+
+p {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-125px, 150px);
+    width: 250px;
+    height: auto;
+    background-color: gray;
+}
+
+p
+
+a {
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+}
+
+a:hover {
+    color: gray;
+    background-color: black;
+}
